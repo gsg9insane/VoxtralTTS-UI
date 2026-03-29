@@ -7,6 +7,10 @@
 
 `VoxtralTTS-UI` is a `PySide6` desktop application for running Voxtral TTS either locally through `vLLM-Omni` or remotely through the `Mistral API`.
 
+## UI Preview
+
+![VoxtralTTS-UI premium interface](./assets/voxtral-ui-premium.png)
+
 It provides:
 
 - preset voice selection
