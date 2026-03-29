@@ -1,0 +1,37 @@
+{
+  "runtime": {
+    "provider": "local",
+    "model": "mistralai/Voxtral-4B-TTS-2603",
+    "remote_model": "voxtral-mini-tts-2603",
+    "host": "127.0.0.1",
+    "port": 8000,
+    "server_command": "auto",
+    "extra_args": "",
+    "ffmpeg_command": "ffmpeg",
+    "request_timeout": 180.0,
+    "pass_language_hint": false,
+    "api_base_url": "https://api.mistral.ai",
+    "api_key": "",
+    "save_api_key": false
+  },
+  "ui": {
+    "synthesis_splitter": [
+      320,
+      360,
+      180
+    ],
+    "source_splitter": [
+      1,
+      1
+    ],
+    "voice_library_splitter": [
+      840,
+      400
+    ],
+    "premium_hero_splitter": [
+      170,
+      790
+    ],
+    "premium_hero_collapsed": false
+  }
+}

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voxtral-studio"
+version = "0.1.0"
+description = "Native desktop studio for local Voxtral TTS inference with voice cloning and export controls."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Codex" }]
+dependencies = [
+  "PySide6>=6.8",
+  "httpx>=0.28",
+  "soundfile>=0.13",
+  "numpy>=2.0",
+  "librosa>=0.11",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+]
+build = [
+  "pyinstaller>=6.11",
+]
+
+[project.scripts]
+voxtral-studio = "voxtral_studio.main:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src",
+]

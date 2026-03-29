@@ -1,0 +1,2 @@
+"""Voxtral Studio desktop application."""
+
