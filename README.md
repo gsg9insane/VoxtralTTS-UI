@@ -5,7 +5,28 @@
 [![Python](https://img.shields.io/badge/python-3.11%2B-3776AB)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%2B%20WSL2-0078D4)](./WSL_SETUP.md)
 
+<p align="center">
+  <img src="./assets/voxtral-banner.svg" alt="VoxtralTTS-UI banner" width="1100" />
+</p>
+
 `VoxtralTTS-UI` is a `PySide6` desktop application for running Voxtral TTS either locally through `vLLM-Omni` or remotely through the `Mistral API`.
+
+## Quick Start
+
+1. Create a Python environment and install the app.
+2. Copy `data/config.example.json` to `data/config.json`.
+3. Pick one runtime path:
+   `Mistral API` for the fastest setup, or `WSL2 + vLLM-Omni` for local execution.
+4. Launch the desktop app.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\activate
+python -m pip install -U pip
+pip install -e .
+copy data\config.example.json data\config.json
+python app.py
+```
 
 ## UI Preview
 
@@ -24,6 +45,21 @@
 ### Composer Workspace
 
 ![Composer workspace detail](./assets/voxtral-ui-composer-detail.png)
+
+## Interface Modes
+
+### Standard UI
+
+- compact desktop layout focused on the core synthesis workflow
+- best fit for quick generation, API use, and day-to-day runtime control
+- launch with `python app.py`
+
+### Premium UI
+
+- expanded production-style layout with a resizable hero, quick actions, and session framing
+- same Voxtral engine and configuration model as the standard app
+- launch with `python PREMIUM\premium_app.py`
+- additional notes in [PREMIUM/README.md](./PREMIUM/README.md)
 
 It provides:
 

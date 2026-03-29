@@ -1,22 +1,28 @@
 # PREMIUM UI
 
-Questa cartella contiene la seconda iterazione dell'interfaccia, separata dalla versione standard.
+This folder contains the second interface pass for VoxtralTTS-UI, kept separate from the standard desktop layout.
 
-## Cosa cambia
+## What Changes
 
-- hero panel con quick actions
-- metric cards per runtime, voice focus, export chain e reference
-- session board in stile production cockpit
-- tab rinominate in `Composer`, `Clone Lab`, `Engine Room`
-- stessa base tecnica della versione standard, quindi niente fork del motore TTS
+- a compact premium hero with quick actions
+- runtime, voice, export, and reference status cards
+- a more production-oriented shell around the same synthesis engine
+- renamed tabs: `Composer`, `Clone Lab`, and `Engine Room`
+- resizable panels and remembered layout state
 
-## Avvio
+## What Stays The Same
+
+- the same Voxtral client and runtime integration
+- the same local and remote generation flow
+- the same project data and configuration model
+
+## Launch
 
 ```powershell
 python PREMIUM\premium_app.py
 ```
 
-oppure:
+or:
 
 ```powershell
 scripts\setup_and_run.ps1 -Mode premium
