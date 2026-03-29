@@ -9,7 +9,21 @@
 
 ## UI Preview
 
-![VoxtralTTS-UI premium interface](./assets/voxtral-ui-premium.png)
+<p align="center">
+  <img src="./assets/voxtral-ui-hero.png" alt="VoxtralTTS-UI premium interface" width="1100" />
+</p>
+
+<p align="center">
+  <em>Premium desktop interface with runtime controls, voice workflow panels, and a resizable production-oriented layout.</em>
+</p>
+
+<p align="center">
+  <img src="./assets/voxtral-ui-preview.gif" alt="Animated preview of the VoxtralTTS-UI workflow" width="1100" />
+</p>
+
+### Composer Workspace
+
+![Composer workspace detail](./assets/voxtral-ui-composer-detail.png)
 
 It provides:
 
